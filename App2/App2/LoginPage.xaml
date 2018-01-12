@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.LoginPage" BackgroundColor="#060140">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Registro" Clicked="OnSignUpButtonClicked"  />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" Padding=" 40,20,40,40" >
+            <Image Source="mainlogo.png" HorizontalOptions="Center"/>
+            <Label Text="Usuario" TextColor="White" FontSize="18" FontAttributes="Bold" />
+            <Entry x:Name="usernameEntry" Placeholder="Ingresa tu usuario" PlaceholderColor="WhiteSmoke" BackgroundColor="#060140" TextColor="WhiteSmoke" Opacity="0.4" FontSize="16" FontAttributes="Italic"/>
+            <Label Text="Contraseña" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+            <Entry x:Name="passwordEntry" IsPassword="true" Placeholder="Ingresa tu contraseña" PlaceholderColor="WhiteSmoke" BackgroundColor="#060140" TextColor="WhiteSmoke" Opacity="0.4" FontSize="16" FontAttributes="Italic"/>
+            <Label Text="Email" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+            <Entry x:Name="emailEntry" Placeholder="Ingresa tu Email" PlaceholderColor="WhiteSmoke" BackgroundColor="#060140" TextColor="WhiteSmoke" Opacity="0.4" FontSize="16" FontAttributes="Italic"/>
+            <Button Text="Entrar" Clicked="OnLoginButtonClicked" WidthRequest="160" HorizontalOptions="Center" TextColor="#060140" BackgroundColor="#f18221" />
+            <Label x:Name="messageLabel" TextColor="WhiteSmoke" FontAttributes="Italic" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

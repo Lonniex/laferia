@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.TodoItemPage">
+    <StackLayout Padding=" 40,80,40,40" VerticalOptions="StartAndExpand">
+        <Label Text="Nombre" TextColor="#f18221" FontSize="18" FontAttributes="Bold" />
+        <Entry Text="{Binding Name}" />
+        <Label Text="Cantidad" TextColor="#f18221" FontSize="18" FontAttributes="Bold"/>
+        <Entry Text="{Binding Notes}" />
+        <Label Text="Listo" TextColor="#f18221" FontSize="18" FontAttributes="Bold" />
+        <Switch IsToggled="{Binding Done}" />
+        <Button Text="Guardar" Clicked="OnSaveClicked"  WidthRequest="160" HorizontalOptions="Center" TextColor="White" BackgroundColor="#060140" />
+        <Button Text="Borrar" Clicked="OnDeleteClicked" WidthRequest="160" HorizontalOptions="Center" TextColor="White" BackgroundColor="#060140"/>
+        <Button Text="Cancelar" Clicked="OnCancelClicked" WidthRequest="160" HorizontalOptions="Center" TextColor="White" BackgroundColor="#060140"/>
+
+    </StackLayout>
+</ContentPage>

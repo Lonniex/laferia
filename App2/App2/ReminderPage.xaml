@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.ReminderPage" BackgroundImage="bg.png" NavigationPage.HasNavigationBar="False">
+
+    
+        
+        <Frame Margin="30" Padding="20" BackgroundColor="#060140" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="10">
+            <Grid WidthRequest=" 260" HeightRequest="100" VerticalOptions="Center">
+                    <Grid.RowDefinitions>
+                            <RowDefinition Height= "Auto"/>
+                            <RowDefinition Height= "Auto"/>
+
+            </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+                    <Label Text="¿Quieres cerrar Sesión?" TextColor="White" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <Button Text="SI" Clicked="OnLogoutButtonClicked" Grid.Row="1" Grid.Column="0" TextColor="White" BackgroundColor="#f18221" WidthRequest="80" />
+                <Button Text="NO" Clicked="Button_OnClicked" Grid.Row="1" Grid.Column="1" TextColor="White" BackgroundColor="#f18221" WidthRequest="80" />
+             </Grid>
+        </Frame>
+
+      
+    
+
+        
+            
+    
+        
+        
+    
+        
+</ContentPage>
